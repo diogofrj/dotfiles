@@ -23,6 +23,7 @@ install:
 	@fc-cache -f -v
 	@echo ""
 	@echo "Instalando o oh-my-zsh"
+	@rm -rf $(PWD)/.oh-my-zsh
 	@git clone https://github.com/robbyrussell/oh-my-zsh.git $(PWD)/.oh-my-zsh
 	@echo ""
 	@echo "Instalando o plugin zsh-syntax-highlighting"
