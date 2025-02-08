@@ -1,0 +1,9 @@
+[user]
+	email = 38474394+diogofrj@users.noreply.github.com
+	name = Diogo Fernandes
+[init]
+	defaultBranch = main
+[pull]
+	rebase = true
+	[advice]
+		skippedCherryPicks = false
