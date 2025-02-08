@@ -27,3 +27,4 @@ compinit
 
 
 source $HOME/.env
+export PATH=$PATH:$HOME/.local/bin

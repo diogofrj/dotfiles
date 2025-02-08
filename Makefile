@@ -20,10 +20,10 @@ install:
 	@getnf -i Meslo
 	@echo ""
 	@echo "Instalando o oh-my-zsh"
-	@git clone https://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh
+	@git clone https://github.com/robbyrussell/oh-my-zsh.git $HOME/dotfiles/.oh-my-zsh
 	@echo ""
 	@echo "Instalando o plugin zsh-syntax-highlighting"
-	@git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+	@git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/dotfiles/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 	@echo ""
 	@echo "Instalando o plugin terragrunt"
-	@git clone https://github.com/Cellophan/terragrunt.plugin.zsh.git ~/.oh-my-zsh/custom/plugins/terragrunt
+	@git clone https://github.com/Cellophan/terragrunt.plugin.zsh.git $HOME/dotfiles/.oh-my-zsh/custom/plugins/terragrunt
