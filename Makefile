@@ -2,6 +2,7 @@
 help:
 	@echo "Comandos disponíveis:"
 	@echo "  install         	- Executa a instalação dos pre-requisitos"
+	@echo "  install-tools   	- Instala todas as ferramentas do Platform Engineer Toolbox"
 
 .DEFAULT_GOAL := help
 
@@ -14,6 +15,7 @@ install:
 	@echo "Instalando o getnf"
 	@curl -fsSL https://raw.githubusercontent.com/getnf/getnf/main/install.sh | bash 
 	@echo ""
+	@echo export PATH=$PATH:$HOME/.local/bin
 	@echo "Instalando as fontes"
 	@getnf -i FiraCode
 	@getnf -i FiraMono
@@ -27,3 +29,8 @@ install:
 	@echo ""
 	@echo "Instalando o plugin terragrunt"
 	@git clone https://github.com/Cellophan/terragrunt.plugin.zsh.git $(PWD)/.oh-my-zsh/custom/plugins/terragrunt
+
+install-tools:
+	@echo "Instalando Platform Engineer Toolbox remotamente..."
+	@curl -fsSL https://raw.githubusercontent.com/diogofrj/platform-toolbox/refs/heads/main/install-tools.sh | bash -s -- --all
+	@echo "Instalação completa!"
