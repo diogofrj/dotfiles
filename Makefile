@@ -20,6 +20,7 @@ install:
 	@getnf -i FiraCode
 	@getnf -i FiraMono
 	@getnf -i Meslo
+	@fc-cache -f -v
 	@echo ""
 	@echo "Instalando o oh-my-zsh"
 	@git clone https://github.com/robbyrussell/oh-my-zsh.git $(PWD)/.oh-my-zsh
@@ -29,6 +30,12 @@ install:
 	@echo ""
 	@echo "Instalando o plugin terragrunt"
 	@git clone https://github.com/Cellophan/terragrunt.plugin.zsh.git $(PWD)/.oh-my-zsh/custom/plugins/terragrunt
+	@echo ""
+	@echo "Baixando o Script de Instalação do Platform Engineer Toolbox"
+	@curl -fsSL https://raw.githubusercontent.com/diogofrj/platform-toolbox/refs/heads/main/install-tools.sh -o install-tools.sh
+	@echo ""
+	@echo "Gerando alias com stow"
+	@stow .
 
 install-tools:
 	@echo "Instalando Platform Engineer Toolbox remotamente..."

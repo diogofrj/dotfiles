@@ -20,3 +20,5 @@ alias tgaall='terragrunt run-all apply plan.tfplan'
 alias tgpa='terragrunt run-all plan -out=plan.tfplan && terragrunt run-all apply plan.tfplan -auto-approve'
 alias tgdall='terragrunt run-all destroy'
 
+
+
