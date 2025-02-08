@@ -1,8 +1,7 @@
 .PHONY: help
 help:
 	@echo "Comandos disponíveis:"
-	@echo "  install         	- Executa a instalação dos pre-requisitos"
-	@echo "  install-tools   	- Instala todas as ferramentas do Platform Engineer Toolbox"
+	@echo "  install         	- Executa a instalação dos dotfiles e ferramentas"
 
 .DEFAULT_GOAL := help
 
@@ -23,18 +22,18 @@ install:
 	@fc-cache -f -v
 	@echo ""
 	@echo "Instalando o oh-my-zsh"
-	@rm -rf $(PWD)/.oh-my-zsh
-	@git clone https://github.com/robbyrussell/oh-my-zsh.git $(PWD)/.oh-my-zsh
+	@rm -rf $HOME/.oh-my-zsh
+	@git clone https://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh
 	@echo ""
 	@echo "Instalando o plugin zsh-syntax-highlighting"
-	@git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $(PWD)/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+	@git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 	@echo ""
 	@echo "Instalando o plugin terragrunt"
-	@git clone https://github.com/Cellophan/terragrunt.plugin.zsh.git $(PWD)/.oh-my-zsh/custom/plugins/terragrunt
+	@git clone https://github.com/Cellophan/terragrunt.plugin.zsh.git $HOME/.oh-my-zsh/custom/plugins/terragrunt
 	@echo ""
 	@echo "Baixando o Script de Instalação do Platform Engineer Toolbox"
-	@curl -fsSL https://raw.githubusercontent.com/diogofrj/platform-toolbox/refs/heads/main/install-tools.sh -o install-tools.sh
+	@curl -fsSL https://raw.githubusercontent.com/diogofrj/platform-toolbox/refs/heads/main/install-tools.sh -o $HOME/install-tools.sh && chmod +x $HOME/install-tools.sh
 	@echo ""
 	@echo "Gerando alias com stow"
-	@stow .
+	@stow -v . && source ~/.zshrc
 
