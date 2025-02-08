@@ -37,7 +37,3 @@ install:
 	@echo "Gerando alias com stow"
 	@stow .
 
-install-tools:
-	@echo "Instalando Platform Engineer Toolbox remotamente..."
-	@curl -fsSL https://raw.githubusercontent.com/diogofrj/platform-toolbox/refs/heads/main/install-tools.sh | bash -s -- --all
-	@echo "Instalação completa!"
