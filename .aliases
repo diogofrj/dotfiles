@@ -1,3 +1,14 @@
+# Core
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ......="cd ../../../../.."
+alias ez="eza -Ah -s=extension --group-directories-first --icons"
+alias ezl="eza -AhlT -L=1 -s=extension --group-directories-first --icons --git --git-ignore"
+alias ezr="eza -AhlR -L=2 -s=extension --group-directories-first --icons --git --git-ignore"
+alias ezt="eza -ahlT -L=2 -s=extension --group-directories-first --icons --git --git-ignore"
+
 #----------- Terragrunt ------------
 alias tg='terragrunt'
 alias tgi='terragrunt init'
