@@ -17,7 +17,7 @@ Dotfiles para o sistema operacional Linux.
 apt install -y chrony nmap zsh ca-certificates curl git vim stow
 
 # Instala o getnf
-curl -fsSL https://raw.githubusercontent.com/getnf/getnf/main/install.sh | bash 
+curl -fsSL https://raw.githubusercontent.com/getnf/getnf/main/install.sh | bash -s
 
 # Instala as fontes
 getnf -i FiraCode

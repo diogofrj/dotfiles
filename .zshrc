@@ -17,9 +17,10 @@ alias l='ls -l'
 alias k='kubectl'
 
 # Configuração do histórico
-HISTSIZE=10000
-SAVEHIST=10000
+HISTSIZE=50000
+SAVEHIST=50000
 HISTFILE=~/.zsh_history
+HIST_STAMPS="mm/dd/yyyy"
 
 # Autocompletion
 autoload -Uz compinit
