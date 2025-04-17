@@ -27,6 +27,9 @@ getnf -i Meslo
 # Instala o oh-my-zsh
 git clone https://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh
 
+# Instala o oh-my-posh
+curl -s https://ohmyposh.dev/install.sh | bash -s
+
 # Instala o plugin zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 

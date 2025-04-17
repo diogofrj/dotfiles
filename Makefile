@@ -12,7 +12,7 @@ install:
 	@sudo apt install -y chrony nmap zsh ca-certificates curl git vim stow
 	@echo ""
 	@echo "Instalando o getnf"
-	@curl -fsSL https://raw.githubusercontent.com/getnf/getnf/main/install.sh | bash 
+	@curl -fsSL https://raw.githubusercontent.com/getnf/getnf/main/install.sh | bash -s
 	@echo ""
 	@echo export PATH=$$PATH:$$HOME/.local/bin
 	@echo "Instalando as fontes"
