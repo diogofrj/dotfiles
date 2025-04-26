@@ -72,3 +72,5 @@ alias posh_azure='eval "$(oh-my-posh --init --shell zsh --config ~/.cache/oh-my-
 alias posh_night-owl='eval "$(oh-my-posh --init --shell zsh --config ~/.cache/oh-my-posh/themes/night-owl.omp.json)"'
 alias posh_json='eval "$(oh-my-posh --init --shell zsh --config ~/.cache/oh-my-posh/themes/json.omp.json)"'
 
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+export PATH=$PATH:/usr/local/go/bin
